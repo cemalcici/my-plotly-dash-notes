@@ -15,7 +15,7 @@ app.layout = html.Div([
             {"label": "New York City", "value": "NYC"},
             {"label": "San Francisco", "value": "SF"}
         ],
-                    value="SF")
+                     value="SF")
     ]),
     # Aralık çubuğu oluşturma
     html.Div([

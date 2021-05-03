@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import pandas as pd
 import base64 # resimleri açmak için kullanılan bir kütüphane
 
-df = pd.read_csv("data/wheels.csv")
+df = pd.read_csv("../../00-data/wheels.csv")
 
 app = dash.Dash()
 
@@ -78,7 +78,7 @@ def callback_b(colors_value):
      Input(component_id="colors", component_property="value")]
 )
 def callback_image(wheel, color):
-    path = "data/Images/"
+    path = "../../00-data/Images/"
     return encode_image(path+df.loc[(df["wheels"] == wheel) & (df["color"] == color), "image"].values[0])
 
 if __name__ == "__main__":

@@ -1,10 +1,11 @@
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+
 # stil oluşturmak için renkler eklendi
 COLORS = {'background': "#111111",
           "text":"#7FDBFF"}
 
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
 
 data = [{'x': [1, 2, 3],
          'y': [4, 1, 2],
